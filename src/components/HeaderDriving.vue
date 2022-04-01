@@ -110,7 +110,7 @@ nav {
 .lista {
   list-style: none;
   display: flex;
-  width: 710px;
+  width: 680px;
   justify-content: space-between;
   position: relative;
   li {
@@ -131,6 +131,7 @@ nav {
   font-weight: bold;
   padding: 13px 30px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .new {
