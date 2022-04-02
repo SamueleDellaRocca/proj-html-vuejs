@@ -1,20 +1,28 @@
 <template>
   <div class="sfondo">
-    <div class="container">
+    <div
+      v-show="index == indexAttivo"
+      v-for="(testimone, index) in arrayTestimoni"
+      :key="testimone.nome"
+      class="container"
+    >
       <h1>Testimonials</h1>
       <div class="sottotitolo">
         Here's what our happy drivers had to say about our services:
       </div>
 
       <div class="img">
-        <img src="../assets/img/testimonial-sophia.png" alt="" />
+        <img
+          :src="require('../assets/img/' + testimone.foto)"
+          :alt="testimone.nome"
+        />
       </div>
       <div class="testo">
         Avada Driving School really helped build my confidence behind the wheel
         and with driving in general, and they got me a first time pass!
       </div>
       <div class="sub-testo">Highly recommended.</div>
-      <h4>Sophia Jones</h4>
+      <h4>{{ testimone.nome }}</h4>
       <div class="flex">
         <div
           @click="funzionePallino(index)"
@@ -35,6 +43,28 @@ export default {
     return {
       indexAttivo: 0,
       arrayPallini: ["a", "b", "c", "d", "e"],
+      arrayTestimoni: [
+        {
+          foto: "testimonial-sophia.png",
+          nome: "Sophia Jones",
+        },
+        {
+          foto: "testimonial-grant.png",
+          nome: "Grant Gary",
+        },
+        {
+          foto: "testimonial-harold.png",
+          nome: "Harold Smith",
+        },
+        {
+          foto: "testimonial-kate.png",
+          nome: "Kate Black",
+        },
+        {
+          foto: "testimonial-kelly.png",
+          nome: "Kelly Stones",
+        },
+      ],
     };
   },
 
@@ -85,8 +115,9 @@ export default {
   }
 
   .testo {
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-size: 1.3rem;
+    margin-bottom: 2rem;
   }
 
   .sub-testo {
