@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="sfondo">
-      <div class="container">
+      <div class="container flexato">
         <div class="sinistra">
           <div class="corner">
             <img src="../assets/img/new-corner.jpg" alt="new-corner" />
@@ -32,6 +32,12 @@
       </div>
     </div>
     <div class="sfondo-2"></div>
+    <div class="container flex">
+      <div v-for="carta in arrayCerchi" :key="carta.percentuale" class="box">
+        <div class="cerchio">{{ carta.percentuale }}</div>
+        <h3>{{ carta.titolo }}</h3>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -54,6 +60,21 @@ export default {
           titolo: "Instructors",
         },
       ],
+
+      arrayCerchi: [
+        {
+          percentuale: "95%",
+          titolo: "PASS RATE",
+        },
+        {
+          percentuale: "100%",
+          titolo: "REFERRAL RATE",
+        },
+        {
+          percentuale: "0%",
+          titolo: "ACCIDENT RATE",
+        },
+      ],
     };
   },
 };
@@ -67,14 +88,14 @@ export default {
   background-position: center;
 }
 
-.container {
+.flexato {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
   padding-bottom: 100px;
   .sinistra {
-    width: 456px;
+    min-width: 412px;
     height: 350px;
     background-color: white;
     text-align: center;
@@ -152,5 +173,45 @@ export default {
   background-size: cover;
   background-position: center;
   filter: invert(5%);
+  margin-bottom: -100px;
+  z-index: -1;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  height: 415px;
+  padding-bottom: 100px;
+  z-index: 10;
+  margin-bottom: 12rem;
+}
+.box {
+  width: 412px;
+  height: 430px;
+  background-color: white;
+  text-align: center;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  color: gray;
+  box-shadow: 0px 30px 20px gray;
+  border-top: 8px solid hsl(105deg 40% 56%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .cerchio {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 12px solid hsl(105deg 40% 56%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: gray;
+    margin-bottom: 2rem;
+  }
 }
 </style>
