@@ -78,7 +78,7 @@ export default {
 
 <style lang="scss" scoped>
 .sfondo {
-  height: 950px;
+  height: 1050px;
   margin-top: -100px;
   background-image: url(../assets/img/testimonial-background.jpg);
   background-position: center;
