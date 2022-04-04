@@ -132,7 +132,7 @@ export default {
   height: 100%;
   padding-bottom: 100px;
   .sinistra {
-    min-width: 412px;
+    width: 412px;
     height: 350px;
     background-color: white;
     text-align: center;
@@ -180,11 +180,12 @@ export default {
   }
 
   .destra {
+    width: calc(100% - 412px);
     padding-top: 4rem;
     color: hsl(205deg 32% 62%);
     display: flex;
     .carta {
-      width: 180px;
+      width: 33%;
       margin: 2rem;
       text-align: center;
     }
@@ -233,7 +234,7 @@ export default {
   margin-bottom: 12rem;
 }
 .box {
-  width: 412px;
+  width: 33%;
   height: 430px;
   background-color: white;
   text-align: center;
