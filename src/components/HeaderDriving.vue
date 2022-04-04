@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="header">
     <div class="bg">
       <div class="container barra-superiore">
         <div>We have a 95% Successful Pass Rate!</div>

@@ -16,6 +16,7 @@
       <div v-for="carta in arrayIstruttori" :key="carta.nome" class="box">
         <div class="img">
           <img :src="require('../assets/img/' + carta.img)" :alt="carta.nome" />
+          <div class="effetto-hover">{{ carta.instructor }}</div>
         </div>
         <h1>{{ carta.nome }}</h1>
         <div class="logos">face twitt ista</div>
@@ -36,14 +37,17 @@ export default {
         {
           img: "instructor-mikehart.jpg",
           nome: "Mike Hart",
+          instructor: "instructor-mikehart",
         },
         {
           img: "instructor-johnsmith.jpg",
           nome: "John Smith",
+          instructor: "instructor-johnsmith",
         },
         {
           img: "instructor-angelahart.jpg",
           nome: "Angela Hart",
+          instructor: "instructor-angelahart",
         },
       ],
     };
@@ -109,9 +113,26 @@ export default {
   .img {
     width: 100%;
     margin-bottom: 1rem;
+    position: relative;
     img {
       width: 100%;
     }
+    .effetto-hover {
+      border: 1px solid black;
+      background-color: white;
+      position: absolute;
+      right: 2px;
+      bottom: 30px;
+      cursor: pointer;
+      padding: 3px 6px;
+      color: black;
+      font-size: 0.8rem;
+      visibility: hidden;
+    }
+  }
+
+  .img:hover .effetto-hover {
+    visibility: visible;
   }
 
   h1 {

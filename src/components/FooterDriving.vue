@@ -53,6 +53,7 @@
         </div>
         <div>face twit yout ista</div>
       </div>
+      <div class="freccia"><a href="header">&uarr;</a></div>
     </div>
   </div>
 </template>
@@ -153,6 +154,19 @@ export default {
 .sfondo2 {
   height: 130px;
   background-color: hsl(210deg 3% 11%);
+  position: relative;
+
+  .freccia {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    background-color: gray;
+    padding: 5px 16px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 .crediti {
