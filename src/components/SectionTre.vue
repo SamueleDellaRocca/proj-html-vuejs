@@ -131,6 +131,7 @@ export default {
   align-items: center;
   height: 100%;
   padding-bottom: 100px;
+  gap: 2rem;
   .sinistra {
     width: 40%;
     height: 350px;
@@ -184,9 +185,10 @@ export default {
     padding-top: 4rem;
     color: hsl(205deg 32% 62%);
     display: flex;
+    gap: 2rem;
     .carta {
       width: 33%;
-      margin: 2rem;
+      // margin: 2rem;
       text-align: center;
     }
     img {

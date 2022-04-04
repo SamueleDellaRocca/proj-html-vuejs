@@ -96,7 +96,7 @@ export default {
 }
 
 .box {
-  width: 412px;
+  width: 33%;
   height: 450px;
   background-color: white;
   text-align: center;

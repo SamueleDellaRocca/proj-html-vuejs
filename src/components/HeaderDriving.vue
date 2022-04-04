@@ -14,7 +14,7 @@
             <img src="../assets/img/avada-drivers-logo-1x.png" alt="" />
           </div>
 
-          <div>
+          <div style="width: 60%">
             <ul class="lista">
               <li v-for="elemento in arrayNav" :key="elemento.text">
                 <a href="">{{ elemento.text }} </a>
@@ -110,7 +110,7 @@ nav {
 .lista {
   list-style: none;
   display: flex;
-  width: 680px;
+  width: 100%;
   justify-content: space-between;
   position: relative;
   li {
