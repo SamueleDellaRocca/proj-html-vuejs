@@ -3,7 +3,10 @@
     <div class="bg">
       <div class="container barra-superiore">
         <div>We have a 95% Successful Pass Rate!</div>
-        <div>Give us a call to book your tuition! 1-800-555-555</div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-phone-flip" class="phone" />Give
+          us a call to book your tuition! 1-800-555-555
+        </div>
       </div>
     </div>
 
@@ -78,6 +81,10 @@ export default {
   align-items: center;
   height: 50px;
   font-size: 0.8rem;
+}
+
+.phone {
+  margin-right: 10px;
 }
 
 .sfondo-header {

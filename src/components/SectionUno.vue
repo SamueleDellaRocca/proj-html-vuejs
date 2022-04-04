@@ -36,6 +36,7 @@
             class="input"
           />
         </form>
+        <div class="adesivo"><img src="../assets/img/image.png" alt="" /></div>
       </div>
 
       <div><button class="btn-nav">request a callback</button></div>
@@ -138,6 +139,16 @@ export default {
         border-radius: 5px;
         padding: 0px 10px;
         background-color: rgb(201, 201, 201, 0.2);
+      }
+
+      .input:first-child {
+        position: relative;
+      }
+
+      .adesivo {
+        position: absolute;
+        right: 16%;
+        bottom: -13%;
       }
     }
 
