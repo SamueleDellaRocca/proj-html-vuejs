@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="footer">
     <div class="sfondo">
       <div class="container flexato">
         <div class="numero1">
@@ -16,15 +16,17 @@
           <h3>CONTACT DETAILS</h3>
           <ul class="ul">
             <li>
-              <a href=""
+              <a href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-house-chimney"
                   class="icon"
               /></a>
-              <a href="">12345 North Main Street, New York, NY 5555555</a>
+              <a href="#footer"
+                >12345 North Main Street, New York, NY 5555555</a
+              >
             </li>
             <li>
-              <a href="">
+              <a href="#footer">
                 <font-awesome-icon
                   icon="fa-solid fa-phone-flip"
                   class="icon"
@@ -32,7 +34,7 @@
               >
             </li>
             <li>
-              <a href=""
+              <a href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-envelope"
                   class="icon"
@@ -40,7 +42,7 @@
               >
             </li>
             <li>
-              <a href=""
+              <a href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-link"
                   class="icon"
@@ -53,7 +55,7 @@
           <h3>COURSES</h3>
           <ul class="lista">
             <li>
-              <a class="green" href=""
+              <a class="green" href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-circle-arrow-right"
                   class="icon"
@@ -61,7 +63,7 @@
               >
             </li>
             <li>
-              <a class="green" href=""
+              <a class="green" href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-circle-arrow-right"
                   class="icon"
@@ -69,7 +71,7 @@
               >
             </li>
             <li>
-              <a class="green" href=""
+              <a class="green" href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-circle-arrow-right"
                   class="icon"
@@ -77,7 +79,7 @@
               >
             </li>
             <li>
-              <a class="green" href=""
+              <a class="green" href="#footer"
                 ><font-awesome-icon
                   icon="fa-solid fa-circle-arrow-right"
                   class="icon"
@@ -111,7 +113,7 @@
         </div>
       </div>
       <div class="freccia">
-        <a href="header"><font-awesome-icon icon="fa-solid fa-angle-up" /></a>
+        <a href="#header"><font-awesome-icon icon="fa-solid fa-angle-up" /></a>
       </div>
     </div>
   </div>
