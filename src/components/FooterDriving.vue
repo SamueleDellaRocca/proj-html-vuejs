@@ -14,24 +14,76 @@
         </div>
         <div class="numero2">
           <h3>CONTACT DETAILS</h3>
-          <ul>
+          <ul class="ul">
             <li>
+              <a href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-house-chimney"
+                  class="icon"
+              /></a>
               <a href="">12345 North Main Street, New York, NY 5555555</a>
             </li>
-            <li><a href="">1.800.555.6789</a></li>
-            <li><a href="">info@your-domain.com</a></li>
-            <li><a href="">Theme-Fusion.com</a></li>
+            <li>
+              <a href="">
+                <font-awesome-icon
+                  icon="fa-solid fa-phone-flip"
+                  class="icon"
+                />1.800.555.6789</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-envelope"
+                  class="icon"
+                />info@your-domain.com</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-link"
+                  class="icon"
+                />Theme-Fusion.com</a
+              >
+            </li>
           </ul>
         </div>
         <div class="numero2">
           <h3>COURSES</h3>
           <ul class="lista">
             <li>
-              <a class="green" href="">Pass Plus</a>
+              <a class="green" href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-circle-arrow-right"
+                  class="icon"
+                />Pass Plus</a
+              >
             </li>
-            <li><a class="green" href="">Intensive Course</a></li>
-            <li><a class="green" href="">Automatic</a></li>
-            <li><a class="green" href="">Instructor Training</a></li>
+            <li>
+              <a class="green" href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-circle-arrow-right"
+                  class="icon"
+                />Intensive Course</a
+              >
+            </li>
+            <li>
+              <a class="green" href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-circle-arrow-right"
+                  class="icon"
+                />Automatic</a
+              >
+            </li>
+            <li>
+              <a class="green" href=""
+                ><font-awesome-icon
+                  icon="fa-solid fa-circle-arrow-right"
+                  class="icon"
+                />Instructor Training</a
+              >
+            </li>
           </ul>
         </div>
         <div class="numero4">
@@ -65,6 +117,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ul li {
+  display: flex;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
 .sfondo {
   height: 450px;
   background-image: url(../assets/img/footer-background-color.jpg);

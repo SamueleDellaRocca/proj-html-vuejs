@@ -5,7 +5,12 @@
         <h1>Start Learning to Drive Today</h1>
         <h3>Give us a call to schedule your first driving lesson</h3>
       </div>
-      <div class="destra">1-800-555-555</div>
+      <div class="destra">
+        <font-awesome-icon
+          icon="fa-solid fa-phone-flip"
+          class="phone"
+        />1-800-555-555
+      </div>
     </div>
   </div>
 </template>
@@ -37,6 +42,9 @@ export default {
 
     .destra {
       font-size: 2.5rem;
+      .phone {
+        margin-right: 25px;
+      }
     }
   }
 }

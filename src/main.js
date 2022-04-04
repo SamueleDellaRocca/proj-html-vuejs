@@ -1,12 +1,18 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
-import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faUserSecret);
+library.add(faCircleArrowRight);
+library.add(faLink);
+library.add(faEnvelope);
+library.add(faHouseChimney);
 library.add(faPhoneFlip);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
