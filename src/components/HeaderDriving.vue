@@ -119,8 +119,15 @@ nav {
       color: white;
       text-transform: uppercase;
       font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: 4px solid transparent;
     }
   }
+}
+
+li a:hover {
+  color: hsl(105deg 40% 56%);
+  border-bottom: 4px solid hsl(105deg 40% 56%);
 }
 
 .btn-nav {
