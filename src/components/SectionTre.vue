@@ -173,6 +173,10 @@ export default {
       border: 1px solid transparent;
       cursor: pointer;
     }
+    .btn-nav:hover {
+      transition: 0.4s;
+      box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+    }
   }
 
   .destra {
@@ -200,6 +204,11 @@ export default {
       border: 3px solid hsl(205deg 32% 62%);
       cursor: pointer;
       margin-top: 10px;
+    }
+
+    .btn-more:hover {
+      border: 3px solid hsl(105deg 40% 56%);
+      color: hsl(105deg 40% 56%);
     }
   }
 }

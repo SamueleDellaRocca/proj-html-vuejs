@@ -73,6 +73,11 @@ export default {
   cursor: pointer;
 }
 
+.btn-nav:hover {
+  transition: 0.4s;
+  box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+}
+
 .testo {
   line-height: 2rem;
 }

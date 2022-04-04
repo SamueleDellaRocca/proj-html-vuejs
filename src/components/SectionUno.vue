@@ -151,6 +151,11 @@ export default {
       border: 1px solid transparent;
       cursor: pointer;
     }
+
+    .btn-nav:hover {
+      transition: 0.4s;
+      box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+    }
   }
 }
 </style>
