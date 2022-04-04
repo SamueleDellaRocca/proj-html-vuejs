@@ -110,7 +110,9 @@
           <font-awesome-icon icon="fa-brands fa-instagram" />
         </div>
       </div>
-      <div class="freccia"><a href="header">&uarr;</a></div>
+      <div class="freccia">
+        <a href="header"><font-awesome-icon icon="fa-solid fa-angle-up" /></a>
+      </div>
     </div>
   </div>
 </template>
