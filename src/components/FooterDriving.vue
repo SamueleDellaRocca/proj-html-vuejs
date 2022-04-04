@@ -158,13 +158,13 @@ export default {
 
   .freccia {
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     right: 100px;
-    background-color: gray;
-    padding: 5px 16px;
     a {
       color: white;
       text-decoration: none;
+      background-color: gray;
+      padding: 5px 16px;
     }
   }
 }
