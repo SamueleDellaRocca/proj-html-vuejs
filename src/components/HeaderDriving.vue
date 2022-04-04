@@ -141,7 +141,7 @@ nav {
 
 .new {
   position: absolute;
-  left: 930px;
+  right: 36.5%;
 
   button {
     background-color: hsl(105deg 40% 56%);

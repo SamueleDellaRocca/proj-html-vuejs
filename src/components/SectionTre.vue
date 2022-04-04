@@ -132,7 +132,7 @@ export default {
   height: 100%;
   padding-bottom: 100px;
   .sinistra {
-    width: 412px;
+    width: 40%;
     height: 350px;
     background-color: white;
     text-align: center;
@@ -180,7 +180,7 @@ export default {
   }
 
   .destra {
-    width: calc(100% - 412px);
+    width: calc(100% - 40%);
     padding-top: 4rem;
     color: hsl(205deg 32% 62%);
     display: flex;
