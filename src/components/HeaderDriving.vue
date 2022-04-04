@@ -3,7 +3,7 @@
     <div class="bg">
       <div class="container barra-superiore">
         <div>We have a 95% Successful Pass Rate!</div>
-        <div>Give us a call to book your tuition! 1-800-55-555</div>
+        <div>Give us a call to book your tuition! 1-800-555-555</div>
       </div>
     </div>
 
@@ -147,6 +147,7 @@ nav {
     border: 1px solid transparent;
     padding: 2px 3px;
     border-radius: 5px;
+    cursor: pointer;
   }
 }
 

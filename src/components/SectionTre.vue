@@ -33,9 +33,46 @@
     </div>
     <div class="sfondo-2"></div>
     <div class="container flex">
-      <div v-for="carta in arrayCerchi" :key="carta.percentuale" class="box">
+      <!-- commento il ciclo per fare l effetto -->
+      <!-- <div v-for="carta in arrayCerchi" :key="carta.percentuale" class="box">
         <div class="cerchio">{{ carta.percentuale }}</div>
         <h3>{{ carta.titolo }}</h3>
+      </div> -->
+
+      <div class="box">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+        </div>
+
+        <div class="number"><h2>87%</h2></div>
+        <h3>PASS RATE</h3>
+      </div>
+
+      <div class="box">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+        </div>
+
+        <div class="number"><h2>100%</h2></div>
+        <h3>REFERRAL RATE</h3>
+      </div>
+
+      <div class="box">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+        </div>
+
+        <div class="number"><h2>0%</h2></div>
+        <h3>ACCIDENT RATE</h3>
       </div>
     </div>
   </div>
@@ -200,18 +237,78 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  .cerchio {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 12px solid hsl(105deg 40% 56%);
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 2rem;
+  }
+
+  .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+  }
+
+  .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 87) / 100);
+    stroke: hsl(105deg 40% 56%);
+  }
+
+  svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: hsl(105deg 40% 56%);
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+  }
+
+  .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    color: gray;
-    margin-bottom: 2rem;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    top: 320px;
+  }
+}
+
+.box:nth-child(2) {
+  .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 100) / 100);
+    stroke: hsl(105deg 40% 56%);
+  }
+}
+
+.box:nth-child(3) {
+  .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 1) / 100);
+    stroke: hsl(105deg 40% 56%);
   }
 }
 </style>
