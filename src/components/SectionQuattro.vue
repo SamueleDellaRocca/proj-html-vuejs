@@ -19,7 +19,11 @@
           <div class="effetto-hover">{{ carta.instructor }}</div>
         </div>
         <h1>{{ carta.nome }}</h1>
-        <div class="logos">face twitt ista</div>
+        <div class="logos">
+          <font-awesome-icon icon="fa-brands fa-facebook-f" />
+          <font-awesome-icon icon="fa-brands fa-twitter" />
+          <font-awesome-icon icon="fa-brands fa-instagram" />
+        </div>
         <div class="text">
           Lorem ipsum dolor sit amet, consectetur adipipiscing elit.
         </div>
@@ -56,6 +60,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logos {
+  display: flex;
+  gap: 1rem;
+  margin: 10px 0px;
+}
+
 .titolo {
   margin-bottom: 3rem;
 }
@@ -102,7 +112,7 @@ export default {
   text-align: center;
   padding: 2rem 3rem;
   border-radius: 15px;
-  color: gray;
+  color: darkgray;
   box-shadow: 0px 30px 20px gray;
   border-top: 8px solid hsl(105deg 40% 56%);
   display: flex;
@@ -136,10 +146,12 @@ export default {
   }
 
   h1 {
+    color: gray;
     margin-bottom: 0.6rem;
   }
-  .logos {
-    margin-bottom: 0.5rem;
+
+  .text {
+    line-height: 2rem;
   }
 }
 

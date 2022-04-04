@@ -103,7 +103,12 @@
           @ Copyright 2012-2020 | Avada Theme by <span>ThemeFusion</span> | All
           rights reserved | Powered by <span>WordPress</span>
         </div>
-        <div>face twit yout ista</div>
+        <div class="ic-flex">
+          <font-awesome-icon icon="fa-brands fa-facebook-f" />
+          <font-awesome-icon icon="fa-brands fa-twitter" />
+          <font-awesome-icon icon="fa-brands fa-youtube" />
+          <font-awesome-icon icon="fa-brands fa-instagram" />
+        </div>
       </div>
       <div class="freccia"><a href="header">&uarr;</a></div>
     </div>
@@ -227,6 +232,13 @@ export default {
       padding: 5px 16px;
     }
   }
+}
+
+.ic-flex {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  gap: 1.1rem;
 }
 
 .crediti {
