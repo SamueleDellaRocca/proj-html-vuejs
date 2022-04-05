@@ -120,6 +120,7 @@ export default {
     border-radius: 15px;
     color: gray;
     box-shadow: 0px 30px 20px gray;
+    z-index: 2;
 
     h4 {
       color: hsl(105deg 40% 56%);

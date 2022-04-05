@@ -33,6 +33,22 @@
       <div class="container titolo">
         <h1>Drive with Avada</h1>
         <h2>We offer the finest driving tuition money can buy</h2>
+
+        <div class="boxes">
+          <div class="box">
+            <div>
+              <font-awesome-icon
+                icon="fa-solid fa-folder-plus"
+                class="folder"
+              />
+            </div>
+            <small>Demos</small>
+          </div>
+          <div class="box verde">
+            <h3>$39</h3>
+            <small>On Sale</small>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -70,6 +86,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 2%;
+  top: 13%;
+}
+
+.box {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .folder {
+    font-size: 2rem;
+  }
+}
+.verde {
+  color: hsl(105deg 40% 56%);
+  small {
+    color: black;
+  }
+}
+
 .bg {
   background-color: hsl(210deg 2% 21%);
   color: gray;
@@ -93,6 +139,7 @@ export default {
   background-image: url(../assets/img/homepage-hero-background.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .sfondo-nav {
