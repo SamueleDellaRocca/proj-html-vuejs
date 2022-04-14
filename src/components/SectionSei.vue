@@ -22,7 +22,8 @@
             <div>Lorem ipsum dolor sit amet, consecteurs adipiscing</div>
           </div>
         </div>
-        <div><button class="btn-nav">more from the blog</button></div>
+        <!-- <div><button>more from the blog</button></div> -->
+        <botton-driving :text="text"></botton-driving>
       </div>
       <div class="freccia"></div>
     </div>
@@ -30,8 +31,16 @@
 </template>
 
 <script>
+import BottonDriving from "./BottonDriving.vue";
 export default {
+  components: { BottonDriving },
   name: "SectionSei",
+
+  data() {
+    return {
+      text: "more from the blog",
+    };
+  },
 };
 </script>
 
@@ -101,22 +110,22 @@ export default {
   }
 }
 
-.btn-nav {
-  width: 250px;
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 80px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 13px 30px;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
+// .btn-nav {
+//   width: 250px;
+//   background-color: hsl(105deg 40% 56%);
+//   border-radius: 80px;
+//   color: white;
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   padding: 13px 30px;
+//   border: 1px solid transparent;
+//   cursor: pointer;
+// }
 
-.btn-nav:hover {
-  transition: 0.4s;
-  box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
-}
+// .btn-nav:hover {
+//   transition: 0.4s;
+//   box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+// }
 
 .freccia {
   width: 100%;

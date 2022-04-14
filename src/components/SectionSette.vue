@@ -3,7 +3,8 @@
     <div class="container">
       <h1>Sign up to our Newsletter</h1>
       <input type="email" name="email" id="email" />
-      <div><button class="btn-nav">subscribe</button></div>
+      <!-- <div><button class="btn-nav">subscribe</button></div> -->
+      <botton-driving class="btn-prova" :text="text"></botton-driving>
       <small>
         (We do not share your data with anybody, and only use it for its inteded
         purpose)
@@ -13,8 +14,16 @@
 </template>
 
 <script>
+import BottonDriving from "./BottonDriving.vue";
 export default {
+  components: { BottonDriving },
   name: "SectionSette",
+
+  data() {
+    return {
+      text: "subscribe",
+    };
+  },
 };
 </script>
 
@@ -48,16 +57,16 @@ input {
   gap: 2rem;
 }
 
-.btn-nav {
+.btn-prova {
   width: 580px;
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 80px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 13px 30px;
-  border: 1px solid transparent;
-  cursor: pointer;
+  // background-color: hsl(105deg 40% 56%);
+  // border-radius: 80px;
+  // color: white;
+  // text-transform: uppercase;
+  // font-weight: bold;
+  // padding: 13px 30px;
+  // border: 1px solid transparent;
+  // cursor: pointer;
 }
 
 .btn-nav:hover {

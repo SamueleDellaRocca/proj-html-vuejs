@@ -26,7 +26,8 @@
           </div>
           <div class="new"><button>NEW</button></div>
 
-          <div><button class="btn-nav">Book Now</button></div>
+          <!-- <div><button class="btn-nav">Book Now</button></div> -->
+          <botton-driving :text="text"></botton-driving>
         </nav>
       </div>
 
@@ -55,11 +56,18 @@
 </template>
 
 <script>
+import BottonDriving from "./BottonDriving";
 export default {
   name: "HeaderDriving",
 
+  components: {
+    BottonDriving,
+  },
+
   data() {
     return {
+      text: "Book Now",
+
       arrayNav: [
         {
           text: "Home",
@@ -184,16 +192,16 @@ li a:hover {
   border-bottom: 4px solid hsl(105deg 40% 56%);
 }
 
-.btn-nav {
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 80px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 13px 30px;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
+// .btn-test {
+// background-color: hsl(105deg 40% 56%);
+//   border-radius: 80px;
+//   color: white;
+//   text-transform: uppercase;
+//   font-weight: bold;
+// padding: 80px 30px;
+//   border: 1px solid transparent;
+//   cursor: pointer;
+// }
 
 .btn-nav:hover {
   transition: 0.4s;

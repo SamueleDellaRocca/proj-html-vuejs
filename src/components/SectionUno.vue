@@ -39,17 +39,25 @@
         <div class="adesivo"><img src="../assets/img/image.png" alt="" /></div>
       </div>
 
-      <div><button class="btn-nav">request a callback</button></div>
+      <!-- <div><button class="btn-nav">request a callback</button></div> -->
+      <botton-driving :text="text"></botton-driving>
     </div>
   </div>
 </template>
 
 <script>
+import BottonDriving from "./BottonDriving.vue";
 export default {
   name: "SectionUno",
 
+  components: {
+    BottonDriving,
+  },
+
   data() {
     return {
+      text: "request a callback",
+
       arrayInput: [
         {
           type: "text",
@@ -153,21 +161,21 @@ export default {
       }
     }
 
-    .btn-nav {
-      background-color: hsl(105deg 40% 56%);
-      border-radius: 80px;
-      color: white;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 13px 30px;
-      border: 1px solid transparent;
-      cursor: pointer;
-    }
+    // .btn-nav {
+    //   background-color: hsl(105deg 40% 56%);
+    //   border-radius: 80px;
+    //   color: white;
+    //   text-transform: uppercase;
+    //   font-weight: bold;
+    //   padding: 13px 30px;
+    //   border: 1px solid transparent;
+    //   cursor: pointer;
+    // }
 
-    .btn-nav:hover {
-      transition: 0.4s;
-      box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
-    }
+    // .btn-nav:hover {
+    //   transition: 0.4s;
+    //   box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+    // }
   }
 }
 </style>

@@ -14,7 +14,8 @@
             consequuntur aut quae nihil obcaecati, magni vel nisi! Atque nemo
             reiciendis dolorem?
           </div>
-          <div><button class="btn-nav">course information</button></div>
+          <!-- <div><button class="btn-nav">course information</button></div> -->
+          <botton-driving class="btn-more" :text="text"></botton-driving>
         </div>
 
         <div class="destra">
@@ -79,10 +80,13 @@
 </template>
 
 <script>
+import BottonDriving from "./BottonDriving.vue";
 export default {
+  components: { BottonDriving },
   name: "SectionTre",
   data() {
     return {
+      text: "course information",
       arrayCourses: [
         {
           img: "courses-passplus.jpg",
@@ -164,20 +168,20 @@ export default {
       margin-bottom: 2rem;
     }
 
-    .btn-nav {
-      background-color: hsl(105deg 40% 56%);
-      border-radius: 80px;
-      color: white;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 13px 30px;
-      border: 1px solid transparent;
-      cursor: pointer;
-    }
-    .btn-nav:hover {
-      transition: 0.4s;
-      box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
-    }
+    // .btn-nav {
+    //   background-color: hsl(105deg 40% 56%);
+    //   border-radius: 80px;
+    //   color: white;
+    //   text-transform: uppercase;
+    //   font-weight: bold;
+    //   padding: 13px 30px;
+    //   border: 1px solid transparent;
+    //   cursor: pointer;
+    // }
+    // .btn-nav:hover {
+    //   transition: 0.4s;
+    //   box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+    // }
   }
 
   .destra {

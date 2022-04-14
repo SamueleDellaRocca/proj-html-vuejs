@@ -8,7 +8,8 @@
           blanditiis aut delectus nesciunt nisi totam sit ipsa nobis ipsam rem
           unde natus fugit officia quis rerum ullam accusantium obcaecati!
         </div>
-        <div><button class="btn-nav">more about us</button></div>
+        <!-- <div><button class="btn-nav">more about us</button></div> -->
+        <botton-driving class="btn-nav" :text="text"></botton-driving>
       </div>
     </div>
 
@@ -33,10 +34,13 @@
 </template>
 
 <script>
+import BottonDriving from "./BottonDriving.vue";
 export default {
+  components: { BottonDriving },
   name: "SectionQuattro",
   data() {
     return {
+      text: "more about us",
       arrayIstruttori: [
         {
           img: "instructor-mikehart.jpg",
@@ -77,20 +81,20 @@ export default {
 
 .btn-nav {
   width: 350px;
-  background-color: hsl(105deg 40% 56%);
-  border-radius: 80px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 13px 30px;
-  border: 1px solid transparent;
-  cursor: pointer;
+  // padding: 13px 30px;
+  // background-color: hsl(105deg 40% 56%);
+  // border-radius: 80px;
+  // color: white;
+  // text-transform: uppercase;
+  // font-weight: bold;
+  // border: 1px solid transparent;
+  // cursor: pointer;
 }
 
-.btn-nav:hover {
-  transition: 0.4s;
-  box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
-}
+// .btn-nav:hover {
+//   transition: 0.4s;
+//   box-shadow: 0px 0px 20px hsl(105deg 40% 56%);
+// }
 
 .testo {
   line-height: 2rem;
